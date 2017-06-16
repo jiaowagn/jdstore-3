@@ -8,6 +8,6 @@ class Order < ApplicationRecord
   validates :shipping_address, presence: true
 
   def generate_token
-    self.token = SecurenRandom.uuid
+    self.token = SecureRandom.uuid
   end
 end
