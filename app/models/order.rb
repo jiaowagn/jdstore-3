@@ -9,7 +9,7 @@ class Order < ApplicationRecord
 
   include AASM
   aasm do
-    state :order_placed
+    state :order_placed, initial: true 
     state :paid
     state :shipping
     state :shipped
